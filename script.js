@@ -42,7 +42,8 @@ function clearGrid() {
 
     do {
         gridno = Number(prompt('Drawing erased. Enter grid size(upto 100)', ''));
-    } while (gridno > 100)
+        console.log(gridno);        
+    } while (gridno > 100 || gridno == 0) 
 
     for (let x = 0; x < item.length; x++) {
         container.removeChild(item[x]);
